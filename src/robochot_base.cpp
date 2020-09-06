@@ -12,10 +12,7 @@ nav_msgs::Odometry odom_msg;
 //
 
 
-void cCb(const std_msgs::String::ConstPtr& msg)
-{
-    ROS_INFO("hola");
-}
+
 
 void twistCb(const geometry_msgs::TwistStamped::ConstPtr& twist_msg)
 {
@@ -49,7 +46,6 @@ int main(int argc, char **argv)
 {
     ros::init(argc, argv, "robochot_base");
     ros::NodeHandle nh;
-    ros::Subscriber sub = nh.subscribe("chatter", 1000, cCb);
     ros::Publisher odom_pub = nh.advertise<nav_msgs::Odometry>("odom", 50);
     // ros::spin();
     ros::Rate r(50);
