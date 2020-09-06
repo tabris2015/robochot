@@ -1,0 +1,13 @@
+topic: cmd_vel
+rate: 20.0
+stamped: false
+inputs:
+  linear:
+    x: axis_left_y
+  angular:
+    z: axis_right_x
+scales:
+  linear:
+    x: 0.18
+  angular:
+    z: 2.3
