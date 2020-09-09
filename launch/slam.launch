@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<launch>
+  <include file="$(find robochot)/launch/laser.launch"/>
+  <arg name="geotiff_map_file_path" default="$(find robochot)/maps"/>
+
+  <param name="/use_sim_time" value="false"/>
+
+  <include file="$(find robochot)/launch/mapping.launch"/>
+
+  <include file="$(find hector_geotiff)/launch/geotiff_mapper.launch">
+    <arg name="trajectory_source_frame_name" value="scanmatcher_frame"/>
+    <arg name="map_file_path" value="$(arg geotiff_map_file_path)"/>
+  </include>
+
+</launch>
