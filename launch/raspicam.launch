@@ -1,0 +1,5 @@
+<launch>
+  <node type="raspicam_node" pkg="raspicam_node" name="raspicam_node" output="screen">
+    <rosparam command="load" file="$(find robochot)/config/raspicam.yaml" />
+  </node>
+</launch>

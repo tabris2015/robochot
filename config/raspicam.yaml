@@ -1,0 +1,10 @@
+enable_raw: false
+enable_imv: false
+camera_id: 0
+camera_frame_id: raspicam
+camera_name: camera 
+private_topics: true
+camera_info_url: package://raspicam_node/camera_info/camerav1_1280x720.yaml
+width: 320
+height: 240
+framerate: 15
