@@ -2,4 +2,5 @@
   <node type="raspicam_node" pkg="raspicam_node" name="raspicam_node" output="screen">
     <rosparam command="load" file="$(find robochot)/config/raspicam.yaml" />
   </node>
+  <node pkg="tf" type="static_transform_publisher" name="base_to_raspicam_broadcaster" args="0.045 0.035 0.07 0 0 0 base_link raspicam 500"/>
 </launch>

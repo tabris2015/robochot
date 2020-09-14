@@ -8,6 +8,6 @@
   <param name="angle_compensate"    type="bool"   value="true"/>
   <!-- <param name="scan_mode"            type="string" value="Boost"/> -->
   </node>
-  <node pkg="tf" type="static_transform_publisher" name="base_to_laser_broadcaster" args="-0.085 0 0.11 0 0 0 base_link laser 100"/>
+  <node pkg="tf" type="static_transform_publisher" name="base_to_laser_broadcaster" args="-0.085 0 0.11 3.1415926 0 0 base_link laser 100"/>
 
 </launch>
