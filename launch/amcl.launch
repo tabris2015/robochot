@@ -1,6 +1,6 @@
 <launch>
 <node pkg="amcl" type="amcl" name="amcl" output="screen">
-  <rosparam command="load" file="$(find robochot)/config/amcl_params.yaml" />
+  <rosparam command="load" file="$(find robochot)/config/nav2d/amcl_params.yaml" />
   <!-- Publish scans from best pose at a max of 10 Hz -->
 
   <!-- <param name="odom_model_type" value="diff"/>
