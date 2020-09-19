@@ -1,7 +1,9 @@
 <launch>
-    <!-- Diagnostic Aggregator -->
+    <!-- Rosserial Node -->
     <arg name="port" default="/dev/ttyACM0" />
     <node pkg="rosserial_python" type="serial_node.py" name="serial_node" output="screen">
         <param name="port" value="$(arg port)" />
     </node>
+    <!-- Odom Publisher -->
+    <node pkg="robochot" type="robochot_base" name="robochot_base" output="screen" />
 </launch>
