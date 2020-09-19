@@ -5,5 +5,5 @@
         <param name="port" value="$(arg port)" />
     </node>
     <!-- Odom Publisher -->
-    <node pkg="robochot" type="robochot_base" name="robochot_base" output="screen" />
+    <node pkg="robochot" type="robochot_base" name="robochot_base" output="screen" respawn="true" respawn_delay="8"/>
 </launch>

@@ -1,7 +1,7 @@
 <launch>
-    <!-- Laser  -->
-    <include file="$(find robochot)/launch/laser.launch"/>
     <!-- Robot Control and Odometry -->
     <include file="$(find robochot)/launch/control.launch"/>
+    <!-- Laser  -->
+    <include file="$(find robochot)/launch/laser.launch"/>
 
 </launch>
