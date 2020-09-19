@@ -50,10 +50,11 @@
   <!--   <doc_depend>doxygen</doc_depend> -->
   <depend>geometry_msgs</depend>
   <depend>tf2</depend>
-  <depend>rosserial</depend>
+  <depend>rosserial_python</depend>
   <depend>tf2_ros</depend>
   <depend>tf2_geometry_msgs</depend>
   <depend>rplidar_ros</depend>
+  <depend>amcl</depend>
   <depend>move_base</depend>
 
   <buildtool_depend>catkin</buildtool_depend>
